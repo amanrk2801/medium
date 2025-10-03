@@ -196,7 +196,7 @@ class ArticleService {
       }
     } catch (error) {
       console.error('Error reading file:', error)
-      throw new Error('Cannot read file content: ' + error.message)
+      throw new Error('Cannot read file content: ' + (error as Error).message)
     }
 
     const response = await api.post(`/articles/${articleId}/image`, formData, {

@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
+import { createContext, useContext, useState, ReactNode } from 'react'
 import { useQuery, useQueryClient } from 'react-query'
 import api from '../services/api'
 import toast from 'react-hot-toast'

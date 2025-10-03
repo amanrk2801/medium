@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Heart, MessageCircle, Bookmark, Share2, Eye } from 'lucide-react'
+import { Heart, Bookmark, Share2, Eye } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -94,8 +94,8 @@ const Article = () => {
   const handleShare = async () => {
     try {
       await navigator.share({
-        title: data?.article.title,
-        text: data?.article.excerpt,
+        title: article?.title,
+        text: article?.excerpt,
         url: window.location.href,
       })
     } catch (error) {

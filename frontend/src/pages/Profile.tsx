@@ -1,7 +1,7 @@
-import { useState } from 'react'
+
 import { useQuery } from 'react-query'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Edit, Trash2, Eye, PenTool, Bookmark } from 'lucide-react'
+import { Edit, Eye, PenTool, Bookmark } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 import articleService from '../services/articleService'
 import { useAuth } from '../contexts/AuthContext'

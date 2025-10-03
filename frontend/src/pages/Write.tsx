@@ -8,8 +8,13 @@ import articleService, { CreateArticleData, ArticleDetail } from '../services/ar
 import LoadingSpinner from '../components/LoadingSpinner'
 import toast from 'react-hot-toast'
 
-interface ArticleForm extends CreateArticleData {
+interface ArticleForm {
+  title: string
+  content: string
+  excerpt?: string
   tags: string
+  category: string
+  published: boolean
 }
 
 const categories = [
@@ -40,7 +45,6 @@ const Write = () => {
     register,
     handleSubmit,
     watch,
-    setValue,
     reset,
     formState: { errors },
   } = useForm<ArticleForm>({
@@ -55,7 +59,6 @@ const Write = () => {
   })
 
   const watchedContent = watch('content')
-  const watchedTitle = watch('title')
 
   // Load article for editing
   useEffect(() => {
@@ -174,7 +177,7 @@ const Write = () => {
   const updateArticle = async (data: CreateArticleData) => {
     try {
       setLoading(true)
-      const response = await articleService.updateArticle(id!, data)
+      await articleService.updateArticle(id!, data)
       
       // Only upload featured image if a new file was selected and changed
       if (featuredImage && featuredImage instanceof File && imageChanged) {
@@ -310,7 +313,7 @@ const Write = () => {
       setLoading(true)
       
       if (isEditing) {
-        const response = await articleService.updateArticle(id!, articleData)
+        await articleService.updateArticle(id!, articleData)
         
         // Only upload image if a new file was selected
         if (featuredImage && featuredImage instanceof File && imageChanged) {
@@ -324,8 +327,8 @@ const Write = () => {
           toast.success('Draft saved successfully!')
         }
       } else {
-        const response = await articleService.createArticle(articleData)
-        const articleId = response.article.id
+        const createResponse = await articleService.createArticle(articleData)
+        const articleId = createResponse.article.id
         
         // Upload image if selected
         if (featuredImage && featuredImage instanceof File && imageChanged) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
 import ArticleManager from '../components/ArticleManager'
@@ -7,8 +7,6 @@ import { Article } from '../services/articleService'
 const Dashboard: React.FC = () => {
   const { user } = useAuth()
   const navigate = useNavigate()
-  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
-
   const handleArticleSelect = (article: Article) => {
     navigate(`/write/${article.id}`)
   }

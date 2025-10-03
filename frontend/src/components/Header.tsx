@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Search, Moon, Sun, PenTool, User, LogOut, Bookmark, Menu, X } from 'lucide-react'
+import { Moon, Sun, PenTool, User, LogOut, Bookmark, Menu, X } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useTheme } from '../contexts/ThemeContext'
 import Avatar from './Avatar'
