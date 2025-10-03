@@ -194,7 +194,7 @@ class ArticleService {
       if (arrayBuffer.byteLength === 0) {
         throw new Error('File content is empty')
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error reading file:', error)
       throw new Error('Cannot read file content: ' + (error as Error).message)
     }

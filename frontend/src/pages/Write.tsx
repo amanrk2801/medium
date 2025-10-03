@@ -343,7 +343,7 @@ const Write = () => {
         }
         
         // Navigate to edit mode for the new article
-        navigate(`/write/${articleId}`)
+        navigate(`/write/${createResponse.article.id}`)
       }
     } catch (error) {
       console.error('Error saving draft:', error)
@@ -425,7 +425,7 @@ const Write = () => {
             </button>
 
             {/* Test Upload Button (Development Only) */}
-            {import.meta.env.DEV && featuredImage && (
+            {(import.meta as any).env?.DEV && featuredImage && (
               <button
                 type="button"
                 onClick={async () => {

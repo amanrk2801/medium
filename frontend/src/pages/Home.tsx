@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Search, TrendingUp, BookOpen, Users, Zap, ArrowRight, Heart, MessageCircle } from 'lucide-react'
-import articleService, { Article } from '../services/articleService'
+import articleService from '../services/articleService'
 import ArticleCard from '../components/ArticleCard'
 import LoadingSpinner from '../components/LoadingSpinner'
 import { useAuth } from '../contexts/AuthContext'
@@ -385,7 +385,7 @@ const Home = () => {
             ) : (
               <>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {articlesData?.articles.map((article: Article) => (
+                  {articlesData?.articles.map((article: any) => (
                     <div key={article.id} className="group">
                       <ArticleCard article={article} />
                     </div>
