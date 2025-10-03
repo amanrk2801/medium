@@ -1,3 +1,6 @@
+Of course\! Here is the corrected and properly formatted version of your Markdown file. I've cleaned up the indentation, spacing, and list formatting to ensure it renders correctly.
+
+```markdown
 # Medium Clone - Complete MERN Stack
 
 A full-featured Medium clone built with the MERN stack (MongoDB, Express.js, React, and Node.js). This application provides a complete, production-ready blogging platform with modern features, a robust backend, and a responsive user interface.
@@ -8,71 +11,73 @@ A full-featured Medium clone built with the MERN stack (MongoDB, Express.js, Rea
 
 ### Backend Features
 
-  - ✅ **Authentication & Authorization**: Secure JWT-based authentication with password hashing (bcrypt).
-  - ✅ **User Management**: Full profile management, avatar uploads, and a follow/unfollow system.
-  - ✅ **Article CRUD**: Complete create, read, update, and delete operations for articles.
-  - ✅ **Advanced Article Features**: Draft/publish states, featured images, categories, and tags.
-  - ✅ **Engagement System**: Like/unlike, commenting, and bookmarking functionality.
-  - ✅ **Image Uploads**: Seamless integration with Cloudinary for optimized image storage and delivery, with a local storage fallback.
-  - ✅ **Search & Discovery**: Full-text search, filtering by tags, categories, and authors, plus a trending articles algorithm.
-  - ✅ **Bulk Operations**: Perform bulk updates (e.g., publish) and deletes on multiple articles at once.
-  - ✅ **User Dashboard**: API endpoints for article and user statistics.
-  - ✅ **Security**: Rate limiting, security headers (Helmet), CORS protection, and server-side input validation.
+- ✅ **Authentication & Authorization**: Secure JWT-based authentication with password hashing (bcrypt).
+- ✅ **User Management**: Full profile management, avatar uploads, and a follow/unfollow system.
+- ✅ **Article CRUD**: Complete create, read, update, and delete operations for articles.
+- ✅ **Advanced Article Features**: Draft/publish states, featured images, categories, and tags.
+- ✅ **Engagement System**: Like/unlike, commenting, and bookmarking functionality.
+- ✅ **Image Uploads**: Seamless integration with Cloudinary for optimized image storage and delivery, with a local storage fallback.
+- ✅ **Search & Discovery**: Full-text search, filtering by tags, categories, and authors, plus a trending articles algorithm.
+- ✅ **Bulk Operations**: Perform bulk updates (e.g., publish) and deletes on multiple articles at once.
+- ✅ **User Dashboard**: API endpoints for article and user statistics.
+- ✅ **Security**: Rate limiting, security headers (Helmet), CORS protection, and server-side input validation.
 
 ### Frontend Features
 
-  - ✅ **Modern Tech Stack**: Built with React 18, TypeScript, and Vite for a fast development experience.
-  - ✅ **Responsive Design**: Mobile-first, clean UI styled with Tailwind CSS, including dark mode support.
-  - ✅ **Efficient Data Handling**: Uses React Query for data fetching, caching, and state management.
-  - ✅ **Article Editor**: A rich text editor that supports Markdown with a real-time preview.
-  - ✅ **User Dashboard**: A comprehensive interface for users to manage their profiles, articles, and view stats.
-  - ✅ **Interactive UI**: Seamless liking, commenting, and bookmarking interactions with toast notifications for user feedback.
+- ✅ **Modern Tech Stack**: Built with React 18, TypeScript, and Vite for a fast development experience.
+- ✅ **Responsive Design**: Mobile-first, clean UI styled with Tailwind CSS, including dark mode support.
+- ✅ **Efficient Data Handling**: Uses React Query for data fetching, caching, and state management.
+- ✅ **Article Editor**: A rich text editor that supports Markdown with a real-time preview.
+- ✅ **User Dashboard**: A comprehensive interface for users to manage their profiles, articles, and view stats.
+- ✅ **Interactive UI**: Seamless liking, commenting, and bookmarking interactions with toast notifications for user feedback.
 
 -----
 
 ## 🛠️ Tech Stack
 
-| Area      | Technology          | Description                               |
-| :-------- | :------------------ | :---------------------------------------- |
+| Area       | Technology          | Description                               |
+| :--------- | :------------------ | :---------------------------------------- |
 | **Backend** | **Node.js** | JavaScript runtime environment            |
-|           | **Express.js** | Web application framework                 |
-|           | **MongoDB** | NoSQL database                            |
-|           | **Mongoose** | Object Data Modeling (ODM) library        |
-|           | **JWT** | Token-based authentication                |
-|           | **Cloudinary** | Cloud-based image management              |
-|           | **Multer** | Middleware for handling file uploads      |
+|            | **Express.js** | Web application framework                 |
+|            | **MongoDB** | NoSQL database                            |
+|            | **Mongoose** | Object Data Modeling (ODM) library        |
+|            | **JWT** | Token-based authentication                |
+|            | **Cloudinary** | Cloud-based image management              |
+|            | **Multer** | Middleware for handling file uploads      |
 | **Frontend** | **React 18** | JavaScript library for building UIs       |
-|           | **TypeScript** | Superset of JavaScript for type safety    |
-|           | **Vite** | Next-generation frontend build tool       |
-|           | **Tailwind CSS** | Utility-first CSS framework               |
-|           | **React Query** | Data fetching and state synchronization   |
-|           | **React Router** | Declarative routing for React             |
-|           | **React Hook Form** | Performant, flexible form validation      |
+|            | **TypeScript** | Superset of JavaScript for type safety    |
+|            | **Vite** | Next-generation frontend build tool       |
+|            | **Tailwind CSS** | Utility-first CSS framework               |
+|            | **React Query** | Data fetching and state synchronization   |
+|            | **React Router** | Declarative routing for React             |
+|            | **React Hook Form** | Performant, flexible form validation      |
 
 -----
 
 ## 📁 Project Structure
 
 ```
+
 medium-clone-mern/
-├── backend/                 # Node.js/Express API
-│   ├── config/              # Database & Cloudinary config
-│   ├── models/              # MongoDB models (User.js, Article.js)
-│   ├── routes/              # API routes (auth.js, articles.js)
-│   ├── middleware/          # Custom middleware (auth.js, upload.js)
-│   ├── .env                 # Environment variables
-│   └── server.js            # Express server entry point
-├── frontend/                # React application
+├── backend/                 \# Node.js/Express API
+│   ├── config/              \# Database & Cloudinary config
+│   ├── models/              \# MongoDB models (User.js, Article.js)
+│   ├── routes/              \# API routes (auth.js, articles.js)
+│   ├── middleware/          \# Custom middleware (auth.js, upload.js)
+│   ├── .env                 \# Environment variables
+│   └── server.js            \# Express server entry point
+├── frontend/                \# React application
 │   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── contexts/        # React contexts for state management
-│   │   ├── pages/           # Page components
-│   │   ├── services/        # API service layer
-│   │   └── main.tsx         # App entry point
+│   │   ├── components/      \# Reusable UI components
+│   │   ├── contexts/        \# React contexts for state management
+│   │   ├── pages/           \# Page components
+│   │   ├── services/        \# API service layer
+│   │   └── main.tsx         \# App entry point
 │   └── vite.config.ts
-├── package.json             # Root package.json with concurrent scripts
+├── package.json             \# Root package.json with concurrent scripts
 └── README.md
-```
+
+````
 
 -----
 
@@ -80,23 +85,23 @@ medium-clone-mern/
 
 Follow these steps to get the project running on your local machine.
 
-### 1\. Prerequisites
+### 1. Prerequisites
 
 Ensure you have the following installed:
 
-  - **Node.js**: Version 16 or higher.
-  - **MongoDB**: A local installation or a free MongoDB Atlas account.
-  - **Git**: For cloning the repository.
-  - **Code Editor**: VS Code is recommended.
+- **Node.js**: Version 16 or higher.
+- **MongoDB**: A local installation or a free MongoDB Atlas account.
+- **Git**: For cloning the repository.
+- **Code Editor**: VS Code is recommended.
 
-### 2\. Installation
+### 2. Installation
 
 First, clone the repository and navigate into the project directory.
 
 ```bash
 git clone <repository-url>
 cd medium-clone-mern
-```
+````
 
 Then, run the setup script from the root directory. This will install dependencies for the root, backend, and frontend concurrently.
 
@@ -184,13 +189,13 @@ This command concurrently starts both the backend and frontend servers:
 
 You can run these scripts from the project's root directory:
 
-| Script          | Description                                           |
-| :-------------- | :---------------------------------------------------- |
-| `npm run dev`   | Starts both backend (with nodemon) and frontend servers |
+| Script          | Description                                            |
+| :-------------- | :----------------------------------------------------- |
+| `npm run dev`   | Starts both backend (with nodemon) and frontend servers  |
 | `npm run server`| Starts only the backend server                         |
 | `npm run client`| Starts only the frontend development server            |
 | `npm run setup` | Installs all dependencies in root, backend, and frontend |
-| `npm run build` | Builds the frontend application for production        |
+| `npm run build` | Builds the frontend application for production         |
 
 -----
 
@@ -200,41 +205,41 @@ The backend provides a comprehensive set of RESTful API endpoints. Authenticatio
 
 #### Authentication
 
-| Method | Endpoint              | Description                      |
-|:-------|:----------------------|:---------------------------------|
-| `POST` | `/api/auth/register`  | Register a new user              |
-| `POST` | `/api/auth/login`     | Log in a user                    |
-| `GET`  | `/api/auth/me`        | Get the current authenticated user |
+| Method | Endpoint             | Description                        |
+| :----- | :------------------- | :--------------------------------- |
+| `POST` | `/api/auth/register` | Register a new user                |
+| `POST` | `/api/auth/login`    | Log in a user                      |
+| `GET`  | `/api/auth/me`       | Get the current authenticated user |
 
 #### Article Operations
 
-| Method   | Endpoint                          | Description                               |
-|:---------|:----------------------------------|:------------------------------------------|
-| `POST`   | `/api/articles`                   | Create a new article                  |
-| `GET`    | `/api/articles`                   | Get all articles with pagination & filtering |
-| `GET`    | `/api/articles/:id`               | Get a single article by its ID        |
-| `PUT`    | `/api/articles/:id`               | Update an article (author only)     |
-| `DELETE` | `/api/articles/:id`               | Delete an article (author only)     |
-| `GET`    | `/api/articles/user/my-articles`  | Get articles created by the current user |
-| `GET`    | `/api/articles/trending`          | Get trending articles                 |
+| Method   | Endpoint                         | Description                                |
+| :------- | :------------------------------- | :----------------------------------------- |
+| `POST`   | `/api/articles`                  | Create a new article                       |
+| `GET`    | `/api/articles`                  | Get all articles with pagination & filtering |
+| `GET`    | `/api/articles/:id`              | Get a single article by its ID             |
+| `PUT`    | `/api/articles/:id`              | Update an article (author only)            |
+| `DELETE` | `/api/articles/:id`              | Delete an article (author only)            |
+| `GET`    | `/api/articles/user/my-articles` | Get articles created by the current user   |
+| `GET`    | `/api/articles/trending`         | Get trending articles                      |
 
 #### Interaction & Media Operations
 
-| Method | Endpoint                        | Description                        |
-|:-------|:--------------------------------|:-----------------------------------|
-| `POST` | `/api/articles/:id/image`       | Upload a featured image for an article |
-| `POST` | `/api/articles/:id/like`        | Toggle like/unlike on an article   |
-| `POST` | `/api/articles/:id/bookmark`    | Toggle bookmark/unbookmark on an article|
-| `POST` | `/api/articles/:id/comments`    | Add a comment to an article        |
-| `DELETE`| `/api/articles/:id/comments/:commentId` | Delete a comment             |
+| Method   | Endpoint                              | Description                              |
+| :------- | :------------------------------------ | :--------------------------------------- |
+| `POST`   | `/api/articles/:id/image`             | Upload a featured image for an article   |
+| `POST`   | `/api/articles/:id/like`              | Toggle like/unlike on an article         |
+| `POST`   | `/api/articles/:id/bookmark`          | Toggle bookmark/unbookmark on an article |
+| `POST`   | `/api/articles/:id/comments`          | Add a comment to an article              |
+| `DELETE` | `/api/articles/:id/comments/:commentId` | Delete a comment                         |
 
 #### Bulk & Stats Operations
 
-| Method   | Endpoint                          | Description                               |
-|:---------|:----------------------------------|:------------------------------------------|
-| `DELETE` | `/api/articles/bulk/delete`       | Delete multiple articles in bulk    |
-| `PUT`    | `/api/articles/bulk/update`       | Update multiple articles in bulk    |
-| `GET`    | `/api/articles/stats/overview`    | Get statistics for the current user's articles |
+| Method   | Endpoint                       | Description                                  |
+| :------- | :----------------------------- | :------------------------------------------- |
+| `DELETE` | `/api/articles/bulk/delete`    | Delete multiple articles in bulk             |
+| `PUT`    | `/api/articles/bulk/update`    | Update multiple articles in bulk             |
+| `GET`    | `/api/articles/stats/overview` | Get statistics for the current user's articles |
 
 -----
 
@@ -317,6 +322,7 @@ Contributions are welcome\! Please follow these steps:
 
 ## 📝 License
 
-This project is licensed under the MIT License.#   m e d i u m 
- 
- 
+This project is licensed under the MIT License.
+
+```
+```
