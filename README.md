@@ -1,6 +1,3 @@
-Of course\! Here is the corrected and properly formatted version of your Markdown file. I've cleaned up the indentation, spacing, and list formatting to ensure it renders correctly.
-
-```markdown
 # Medium Clone - Complete MERN Stack
 
 A full-featured Medium clone built with the MERN stack (MongoDB, Express.js, React, and Node.js). This application provides a complete, production-ready blogging platform with modern features, a robust backend, and a responsive user interface.
@@ -325,4 +322,4 @@ Contributions are welcome\! Please follow these steps:
 This project is licensed under the MIT License.
 
 ```
-```
+
