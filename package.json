@@ -1,0 +1,27 @@
+{
+  "name": "medium-clone-mern",
+  "version": "1.0.0",
+  "description": "Complete MERN stack Medium clone",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "setup": "npm install && npm run install-all"
+  },
+  "keywords": [
+    "mern",
+    "medium",
+    "clone",
+    "blog"
+  ],
+  "author": "Aman Kumbhalwar",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

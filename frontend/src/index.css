@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+  }
+  
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600 transition-all duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500 shadow-lg hover:shadow-xl transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-gray-500 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Custom prose styles for article content */
+  .prose {
+    @apply max-w-none text-gray-900 dark:text-gray-100;
+    line-height: 1.75;
+    font-size: 1.125rem;
+  }
+  
+  .prose h1 {
+    @apply text-4xl font-bold text-gray-900 dark:text-white mb-6 mt-8;
+    line-height: 1.2;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-semibold text-gray-900 dark:text-white mb-4 mt-8;
+    line-height: 1.3;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold text-gray-900 dark:text-white mb-3 mt-6;
+    line-height: 1.4;
+  }
+  
+  .prose p {
+    @apply mb-6 text-gray-700 dark:text-gray-300;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-primary-500 pl-6 italic text-gray-600 dark:text-gray-400 my-6;
+  }
+  
+  .prose code {
+    @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono text-gray-800 dark:text-gray-200;
+  }
+  
+  .prose pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-auto my-6;
+  }
+  
+  .prose pre code {
+    @apply bg-transparent p-0 text-gray-100;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-6 pl-6;
+  }
+  
+  .prose li {
+    @apply mb-2 text-gray-700 dark:text-gray-300;
+  }
+  
+  .prose a {
+    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline transition-colors;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-primary-500 pl-6 italic text-gray-600 dark:text-gray-400 my-6 bg-primary-50 dark:bg-primary-900/20 py-4 rounded-r-lg;
+  }
+  
+  .prose img {
+    @apply rounded-lg my-6 w-full;
+  }
+  
+  .prose hr {
+    @apply border-gray-300 dark:border-gray-600 my-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gradient-primary {
+    background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.accent.500'));
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, theme('colors.primary.600'), theme('colors.accent.600'));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
